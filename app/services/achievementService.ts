@@ -1,6 +1,6 @@
 import axios from 'axios'
-import { User, UserAchievements, UserLibrary } from '../components/types'
-import { Levels } from '../components/types'
+import { User, UserAchievements, UserLibrary } from './types'
+import { Levels } from './types'
 
 const ACHIEVEMENT_REQUIREMENTS = {
   PLATINUM: {

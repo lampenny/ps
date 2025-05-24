@@ -3,7 +3,7 @@
 import { useEffect, useState } from 'react'
 import axios from 'axios'
 import UserCard from './UserCard'
-import { User, TransformedUser } from './types'
+import { User, TransformedUser } from '../services/types'
 import { fetchUserAchievements } from '../services/achievementService'
 
 export default function Dashboard() {
@@ -48,7 +48,7 @@ export default function Dashboard() {
   return (
     <div className="font-[family-name:var(--font-geist-sans)]">
       <div className="flex flex-col m-10">
-        <header className="mb-10">
+        <header className="mb-5">
           <h1
             className="text-3xl font-bold cursor-pointer hover:text-transparent hover:bg-gradient-to-r from-teal-300 via-purple-400 to-pink-300 bg-clip-text"
             onClick={handleHeaderClick}
